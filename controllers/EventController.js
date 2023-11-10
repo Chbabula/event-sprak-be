@@ -46,7 +46,7 @@ const getEvent = async (req, res) => {
 
         res.status(200).json({
             data: {title: eventDoc.title,
-            desc: eventDoc.description,
+            desc: eventDoc.desc,
             img: eventDoc.imgUrl,
             location: eventDoc.location,
             startTime: eventDoc.startDate + ' ' + eventDoc.startTime,

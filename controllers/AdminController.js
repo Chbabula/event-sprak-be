@@ -98,8 +98,8 @@ const createEvent = async (req, res) => {
       data: eventDoc,
     });
   } catch (err) {
-    res.status(400).json({ error: "error occured" });
     console.log(err);
+    res.status(400).json({ error: "error occured" });
   }
 
   console.log(req.body);
